@@ -30,7 +30,7 @@ def parse_time_range(text):
     return sh, sm, eh, em
 
 def fetch_events():
-    html = requests.get(URL).text
+    html = requests.get(URL, verify=False).text
     soup = BeautifulSoup(html, "html.parser")
     text = soup.get_text("\n")
 
