@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import uuid
 import re
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 URL = "https://www.ashlandskateland.com/calendar.html"
 
