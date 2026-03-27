@@ -8,7 +8,7 @@ import urllib3
 # Fix SSL issue
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-URL = "https://www.ashlandskateland.com/calendar.html"
+URL = "http://www.ashlandskateland.com/calendar.html"
 
 def clean(text):
     return re.sub(r'\s+', ' ', text).strip()
